@@ -8,7 +8,7 @@
 
 以下のリンクからすぐに体験できます！
 
-[**NeuralBlockForgeを使ってみる**](https://{あなたのGitHubユーザー名}.github.io/{リポジトリ名}/)
+[**NeuralBlockForgeを使ってみる**](https://kingyo1205.github.io/NeuralBlockForge/)
 
 *(このリンクは、GitHub Pagesで公開した後に有効になります)*
 

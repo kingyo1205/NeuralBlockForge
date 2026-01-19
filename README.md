@@ -8,7 +8,7 @@
 
 You can try it out right away at the link below!
 
-[**Experience NeuralBlockForge now**](https://{your-github-username}.github.io/{your-repo-name}/)
+[**Experience NeuralBlockForge now**](https://kingyo1205.github.io/NeuralBlockForge/)
 
 *(This link will be active after you publish it on GitHub Pages.)*
 
