@@ -33,3 +33,12 @@
 | Blockly           | Apache License 2.0   |
 | Chart.js          | MIT License          |
 | Bootstrap         | MIT License          |
+
+
+## 使用しているAIツール
+RawPhotoForgeの開発では、以下のAIツールを活用しています。
+
+- ChatGPT
+- Gemini
+- Gemini CLI
+- Claude

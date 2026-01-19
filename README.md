@@ -33,3 +33,13 @@ This project is licensed under the [MIT License](LICENSE).
 | Blockly           | Apache License 2.0   |
 | Chart.js          | MIT License          |
 | Bootstrap         | MIT License          |
+
+
+## AI Tools Used
+The development of RawPhotoForge is supported by the following AI tools:
+
+- ChatGPT
+- Gemini
+- Gemini CLI
+- Claude
+
