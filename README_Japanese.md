@@ -1,4 +1,6 @@
-# 🚀 NeuralBlockForge: WebGPUとTensorFlow.jsを活用し、ブラウザ上でAIモデルをブロックのように組み立てて学習・推論できるツール！ 🧠
+# NeuralBlockForge
+
+🚀 WebGPUとTensorFlow.jsを活用し、ブラウザ上でAIモデルをブロックのように組み立てて学習・推論できるツール！ 🧠
 
 `NeuralBlockForge` は、専門的なコーディング知識がなくても、直感的なビジュアルプログラミングで独自の画像分類AIモデルを構築できる静的ウェブサイトです。
 

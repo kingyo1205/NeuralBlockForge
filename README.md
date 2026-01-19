@@ -1,4 +1,6 @@
-# 🚀 NeuralBlockForge: Build, train, and run AI models in your browser like playing with blocks, powered by WebGPU and TensorFlow.js! 🧠
+# NeuralBlockForge
+
+🚀 Build, train, and run AI models in your browser like playing with blocks, powered by WebGPU and TensorFlow.js! 🧠
 
 `NeuralBlockForge` is a static website that allows you to build your own image classification AI models with an intuitive, visual programming interface, right in your browser. No deep coding knowledge required.
 
