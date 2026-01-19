@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockAI - Visual AI Model Builder</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BlockAI</a>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Blockly Area (Left) -->
+            <div class="col-lg-8">
+                <h5><span class="badge bg-secondary">1. Build Model & Dataset</span></h5>
+                <div id="blocklyDiv" style="height: 600px; width: 100%;"></div>
+            </div>
+
+            <!-- Control & Info Area (Right) -->
+            <div class="col-lg-4">
+                <!-- Control Panel -->
+                <h5><span class="badge bg-secondary">2. Train & Test</span></h5>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Control Panel</h5>
+                        
+                        <div class="mb-3">
+                            <label for="dataset-folder-input" class="form-label">Dataset Folder</label>
+                            <input type="file" id="dataset-folder-input" class="form-control" webkitdirectory directory multiple>
+                            <div class="form-text">Select the root folder of your dataset.</div>
+                        </div>
+
+                        <hr>
+
+                        <h6>Training</h6>
+                        <div class="row">
+                            <div class="col">
+                                <label for="epochs-input" class="form-label">Epochs</label>
+                                <input type="number" id="epochs-input" class="form-control" value="10">
+                            </div>
+                            <div class="col">
+                                <label for="batch-size-input" class="form-label">Batch Size</label>
+                                <input type="number" id="batch-size-input" class="form-control" value="32">
+                            </div>
+                        </div>
+                        <button id="train-button" class="btn btn-primary mt-3 w-100">Start Training</button>
+
+                        <hr>
+
+                        <h6>Model Management</h6>
+                        <div class="btn-group w-100" role="group">
+                            <button id="download-model-button" class="btn btn-outline-success">Download Model</button>
+                            <label class="btn btn-outline-primary">
+                                Upload Model <input type="file" id="upload-model-input" multiple hidden>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Panel -->
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Information</h5>
+                        <p><strong>Status:</strong> <span id="status-span">Ready</span></p>
+                        <div class="progress">
+                            <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                        </div>
+                        
+                        <h6 class="mt-3">Loss Chart</h6>
+                        <canvas id="loss-chart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Inference Panel -->
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Inference</h5>
+                        <div class="mb-3">
+                            <label for="inference-image-input" class="form-label">Image for Inference</label>
+                            <input type="file" id="inference-image-input" class="form-control" accept="image/*">
+                        </div>
+                        <img id="inference-image-preview" src="#" alt="Preview" class="img-fluid mb-2" style="display: none;">
+                        <button id="infer-button" class="btn btn-info w-100">Predict</button>
+                        <p class="mt-2"><strong>Prediction:</strong> <span id="prediction-result"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blockly -->
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="https://unpkg.com/blockly/javascript_compressed.js"></script>
+    <!-- TensorFlow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgpu@4.22.0/dist/tf-backend-webgpu.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-wasm@4.22.0/dist/tf-backend-wasm.min.js"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <xml id="toolbox" style="display: none">
+        <!-- Toolbox will be defined here later -->
+    </xml>
+    <script src="blockly_blocks.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

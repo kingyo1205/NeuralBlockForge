@@ -1,0 +1,53 @@
+/* General Body Style */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Blockly Workspace */
+#blocklyDiv {
+    border: 1px solid #dee2e6;
+    border-radius: .25rem;
+}
+
+/* Ensure Blockly's toolbox doesn't get hidden */
+.blocklyToolboxDiv {
+    z-index: 1000; /* Higher than other elements */
+}
+
+/* Right-side cards styling */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, .075);
+}
+
+.card-title {
+    font-weight: 500;
+}
+
+/* Progress bar text visibility */
+.progress-bar {
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Inference image preview */
+#inference-image-preview {
+    max-height: 250px;
+    width: 100%;
+    object-fit: contain;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+
+/* Custom badge colors */
+.badge.bg-secondary {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+}
