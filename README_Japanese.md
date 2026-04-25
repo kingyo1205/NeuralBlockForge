@@ -10,7 +10,6 @@
 
 [**NeuralBlockForgeを使ってみる**](https://kingyo1205.github.io/NeuralBlockForge/)
 
-*(このリンクは、GitHub Pagesで公開した後に有効になります)*
 
 ## 🌟 特徴 (Features)
 
@@ -27,12 +26,12 @@
 
 `NeuralBlockForge` は、以下の素晴らしいオープンソースソフトウェアに依存しています。
 
-| ライブラリ名      | ライセンス           |
-| ----------------- | -------------------- |
-| TensorFlow.js     | Apache License 2.0   |
-| Blockly           | Apache License 2.0   |
-| Chart.js          | MIT License          |
-| Bootstrap         | MIT License          |
+| ライブラリ名      | ライセンス     | Link |
+|---------------|--------------------|------|
+| TensorFlow.js | Apache License 2.0 | https://github.com/tensorflow/tfjs                  |
+| Blockly       | Apache License 2.0 | https://github.com/RaspberryPiFoundation/blockly    |
+| Chart.js      | MIT License        | https://github.com/chartjs/Chart.js                 |
+| Bootstrap     | MIT License        | https://github.com/twbs/bootstrap                   |
 
 
 ## 使用しているAIツール
